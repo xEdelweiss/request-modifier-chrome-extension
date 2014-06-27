@@ -16,3 +16,4 @@ Chrome extension for on-fly requests modification. Extends developer tools.
 # Credits
  * [jQuery](http://jquery.com/)
  * [Hopstarter (Jojo Mendoza)](http://hopstarter.deviantart.com/)
+ * [Google Closure Compiler](https://github.com/google/closure-compiler)
