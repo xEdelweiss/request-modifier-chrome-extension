@@ -1,0 +1,28 @@
+{
+    "name": "RequestModifier",
+    "version": "0.0.1",
+    "manifest_version": 2,
+    "description": "Chrome extension for on-fly requests modification. Extends developer tools.",
+    "devtools_page": "html/devtools.html",
+    "background": {
+        "scripts": ["js/background.js"]
+    },
+    "content_scripts": [
+        {
+            "matches": ["http://*/*", "https://*/*"],
+            "js": ["js/content.js"]
+        }
+    ],
+    "permissions": [
+        "webRequest",
+        "webRequestBlocking",
+        "tabs",
+        "http://*/*",
+        "https://*/*"
+    ],
+    "icons": {
+        "16": "img/icon16.png",
+        "48": "img/icon48.png",
+        "128": "img/icon128.png"
+    }
+}
